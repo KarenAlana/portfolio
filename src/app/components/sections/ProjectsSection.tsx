@@ -14,8 +14,6 @@ export function ProjectsSection() {
     next,
     prev,
     goToIndex,
-    isPaused,
-    setIsPaused,
     canGoNext,
     canGoPrev,
   } = useProjectsCarousel(projects, itemsPerPage);
@@ -63,11 +61,7 @@ export function ProjectsSection() {
           </div>
         </motion.div>
 
-        <div
-          className="flex gap-6 overflow-hidden"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
+        <div className="flex gap-6 overflow-hidden">
           {slides.map((project, index) => (
             <div
               key={index}
@@ -84,10 +78,7 @@ export function ProjectsSection() {
           }).map((_, i) => (
             <button
               key={i}
-              onClick={() => {
-                setIsPaused(true);
-                goToIndex(i * itemsPerPage);
-              }}
+              onClick={() => goToIndex(i * itemsPerPage)}
               className={`w-3 h-3 rounded-full transition-all ${
                 currentIndex / itemsPerPage === i
                   ? "bg-blue-500 w-6"
