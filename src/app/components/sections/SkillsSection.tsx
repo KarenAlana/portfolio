@@ -106,7 +106,10 @@ export function SkillsSection() {
   };
 
   return (
-    <section className="min-h-screen bg-gray-900 text-white py-16 px-4">
+    <section
+      className="min-h-screen bg-gray-900 text-white py-16 px-4"
+      id="habilidades"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

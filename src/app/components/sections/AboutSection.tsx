@@ -6,6 +6,7 @@ export function AboutSection() {
     <section
       id="about"
       className="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white py-24 px-6 flex flex-col md:flex-row items-center justify-center gap-12"
+      id="sobre"
     >
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         <motion.div

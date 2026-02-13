@@ -3,7 +3,10 @@ import { socialLinks } from "@/app/constants/socialLinks";
 
 export function Footer() {
   return (
-    <footer className="py-8 px-6 bg-gray-900 border-t border-gray-800">
+    <footer
+      className="py-8 px-6 bg-gray-900 border-t border-gray-800"
+      id="contato"
+    >
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">

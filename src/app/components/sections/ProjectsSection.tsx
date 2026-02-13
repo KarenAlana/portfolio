@@ -9,19 +9,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 export function ProjectsSection() {
   const itemsPerPage = useItemsPerPage();
 
-  const {
-    currentIndex,
-    next,
-    prev,
-    goToIndex,
-    canGoNext,
-    canGoPrev,
-  } = useProjectsCarousel(projects, itemsPerPage);
+  const { currentIndex, next, prev, goToIndex, canGoNext, canGoPrev } =
+    useProjectsCarousel(projects, itemsPerPage);
 
   const slides = projects.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <section className="py-12">
+    <section className="py-12" id="projetos">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
