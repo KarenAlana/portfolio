@@ -8,7 +8,7 @@ export const projects = [
   {
     title: "Blog Dev",
     image: "/img/2.png",
-    demo: "https://blog-kappa-five-32.vercel.app/",
+    demo: "https://karen-blogdev.vercel.app/",
     repo: "https://github.com/KarenAlana/blog",
   },
   {
